@@ -246,8 +246,9 @@ To construct the SMB factor for week $t$ we sort all cryptocurrencies by size in
 
 	<section>
 	  <ul>
-	    <li class="fragment highlight-current-green">Insignificant alpha</li>
-	    <li> <span class="fragment highlight-current-green">Crypto Market Risk Premium is positive and significant</span>, and <span class="fragment highlight-current-green">estimated to be 10.14% per year</span></li>
+	    <li class="fragment highlight-current-red">Significant alpha 2020 onward</li>
+	    <li class="fragment highlight-current-green">Insignificant alpha from 2022</li>
+	    <li> <span class="fragment highlight-current-green">Crypto Market Risk Premium is positive and significant</span>, and <span class="fragment highlight-current-green">estimated to be between 13.52% and 10.14% per year</span></li>
 	    <li class="fragment highlight-current-green">Tech and Finance related stock sectors have a positive risk premia</li>
 	  </ul>
 	</section>
@@ -256,6 +257,7 @@ To construct the SMB factor for week $t$ we sort all cryptocurrencies by size in
 	  <ul>
 	    <li class="fragment highlight-current-green">Altcoin Index measures priced risk</li>
 	    <li class="fragment highlight-current-green">$SMB_C$ has a negative and significant risk premium </li>
+	    <li class="fragment highlight-current-green">Hacks has a positive risk premia</li>
 	    <li class="fragment highlight-current-blue">Inconclusive evidence with respect to TVL</li>
 	    <!-- <li class="fragment highlight-current-blue">Implied Volatility (CVX) has an insignificant risk premium</li> -->
 	  </ul>
@@ -265,37 +267,17 @@ To construct the SMB factor for week $t$ we sort all cryptocurrencies by size in
 	    <h3>Estimated Risk Premia</h3>
 	  </section>
 
-	<section data-markdown>
-	  <textarea data-template>
-|              | Mean           | Std Error |  Tstat |  Pval |
-|--------------|----------------|-----------|--------|-------|
-| $\alpha$     | <span class="fragment highlight-red">0.008</span>          |     0.005 |  1.662 | 0.100 |
-| $R_C - R_f$  | <span class="fragment highlight-green">0.195</span>  |     0.022 |  8.804 | 0.000 |
-| $Mom_C$      | -0.014         |     0.024 | -0.586 | 0.559 |
-| $SMB_C$      | <span class="fragment highlight-green">-0.100</span> |     0.020 | -4.919 | 0.000 |
-| $Gold$       | 0.007          |     0.017 |  0.416 | 0.678 |
-| $Util$       | 0.006          |     0.009 |  0.696 | 0.488 |
-| $Softw$      | <span class="fragment highlight-green">0.044</span>  |     0.012 |  3.618 | 0.000 |
-| $Chips$      | <span class="fragment highlight-green">0.028</span>   |     0.013 |  2.263 | 0.026 |
-	  </textarea>
-	</section>
+	  <section data-background-image="./code_image.jpg">
+	  <div class="stretch">
+	    <iframe src="https://ztranche.com/python_apps/fama_macbeth/" height="100%" width="100%"></iframe>
+	  </div>
+	  </section>
 
-	<section data-markdown>
-	  <textarea data-template>
-|              | Mean           | Std Error |  Tstat |  Pval |
-|--------------|----------------|-----------|--------|-------|
-| $Banks$      |<span class="fragment highlight-green">0.022</span>  |     0.011 |  2.078 | 0.040 |
-| $Insur$      |<span class="fragment highlight-green">0.020</span>  |     0.009 |  2.235 | 0.027 |
-| $RlEst$      |<span class="fragment highlight-green">0.027</span>  |     0.011 |  2.447 | 0.016 |
-| $Fin$        |<span class="fragment highlight-green">0.027</span>  |     0.008 |  3.260 | 0.001 |
-| $Hacks$      | 0.000  |     0.000 |  1.517 | 0.132 |
-| $Alts Index$ | <span class="fragment highlight-green">0.003</span>  |     0.001 |  2.788 | 0.006 |
-	  </textarea>
-	</section>
+	  <section>
+	    <h2>2020 through 2024</h2>
+</section>
 
-	
-<!---	 Old 
-	<section data-markdown>
+	  	<section data-markdown>
 	  <textarea data-template>
 |              |          Mean | Std. Error |  Tstat |  Pval 
 |--------------|---------------|------------|--------|-------|
@@ -343,8 +325,43 @@ To construct the SMB factor for week $t$ we sort all cryptocurrencies by size in
 | FG Index   | -0.159 |     0.168 | -0.945 | 0.346 |
 
 	  </textarea>
+	</section>
+	
+	  <section>
+	    <h2>2022 through 2024</h2>
 </section>
-	-->
+
+
+	<section data-markdown>
+	  <textarea data-template>
+|              | Mean           | Std Error |  Tstat |  Pval |
+|--------------|----------------|-----------|--------|-------|
+| $\alpha$     | <span class="fragment highlight-red">0.008</span>          |     0.005 |  1.662 | 0.100 |
+| $R_C - R_f$  | <span class="fragment highlight-green">0.195</span>  |     0.022 |  8.804 | 0.000 |
+| $Mom_C$      | -0.014         |     0.024 | -0.586 | 0.559 |
+| $SMB_C$      | <span class="fragment highlight-green">-0.100</span> |     0.020 | -4.919 | 0.000 |
+| $Gold$       | 0.007          |     0.017 |  0.416 | 0.678 |
+| $Util$       | 0.006          |     0.009 |  0.696 | 0.488 |
+| $Softw$      | <span class="fragment highlight-green">0.044</span>  |     0.012 |  3.618 | 0.000 |
+| $Chips$      | <span class="fragment highlight-green">0.028</span>   |     0.013 |  2.263 | 0.026 |
+	  </textarea>
+	</section>
+
+	<section data-markdown>
+	  <textarea data-template>
+|              | Mean           | Std Error |  Tstat |  Pval |
+|--------------|----------------|-----------|--------|-------|
+| $Banks$      |<span class="fragment highlight-green">0.022</span>  |     0.011 |  2.078 | 0.040 |
+| $Insur$      |<span class="fragment highlight-green">0.020</span>  |     0.009 |  2.235 | 0.027 |
+| $RlEst$      |<span class="fragment highlight-green">0.027</span>  |     0.011 |  2.447 | 0.016 |
+| $Fin$        |<span class="fragment highlight-green">0.027</span>  |     0.008 |  3.260 | 0.001 |
+| $Hacks$      | 0.000  |     0.000 |  1.517 | 0.132 |
+| $Alts Index$ | <span class="fragment highlight-green">0.003</span>  |     0.001 |  2.788 | 0.006 |
+	  </textarea>
+	</section>
+
+	
+
 
 	<!---
 	<section>
@@ -426,12 +443,6 @@ To construct the SMB factor for week $t$ we sort all cryptocurrencies by size in
 
 		  </textarea>
 		</section>
-
-		<section data-background-image="./code_image.jpg">
-	  <div class="stretch">
-	    <iframe src="https://ztranche.com/python_apps/fama_macbeth/" height="100%" width="100%"></iframe>
-	  </div>
-	</section>
 
 
 <section>
